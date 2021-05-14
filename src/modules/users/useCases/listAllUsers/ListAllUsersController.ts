@@ -7,6 +7,10 @@ class ListAllUsersController {
 
   handle(request: Request, response: Response): Response {
     // Complete aqui
+
+    const { user_id } = request.headers;
+
+    return response.json();
   }
 }
 
