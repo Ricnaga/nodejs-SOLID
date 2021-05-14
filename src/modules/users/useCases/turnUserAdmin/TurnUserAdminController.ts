@@ -7,6 +7,9 @@ class TurnUserAdminController {
 
   handle(request: Request, response: Response): Response {
     // Complete aqui
+    const { id } = request.params;
+
+    return response.json();
   }
 }
 
