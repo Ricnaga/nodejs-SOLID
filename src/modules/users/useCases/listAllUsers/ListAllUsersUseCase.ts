@@ -12,7 +12,7 @@ class ListAllUsersUseCase {
     // Complete aqui
     const isAdmin = this.usersRepository.findById(user_id);
 
-    if (isAdmin.admin === false) {
+    if (!isAdmin.admin) {
       throw new Error("This user is not administrator");
     }
 

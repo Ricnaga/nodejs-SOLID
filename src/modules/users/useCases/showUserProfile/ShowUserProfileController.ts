@@ -9,6 +9,7 @@ class ShowUserProfileController {
     // Complete aqui
     try {
       const { user_id } = request.params;
+      console.log(request.params);
 
       const userId = this.showUserProfileUseCase.execute({ user_id });
 
