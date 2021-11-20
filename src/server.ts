@@ -1,3 +1,9 @@
 import { app } from ".";
 
-app.listen(3333, () => console.log("Server is running!"));
+const PORT = 3333;
+
+app.listen(PORT, () =>
+  console.log(
+    `👀 Server http://localhost:${PORT}/api-docs is being watched - 'Quis custodiet ipsos custodes? 🤔'!`
+  )
+);
